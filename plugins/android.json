@@ -1,0 +1,47 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "com.synconset.cordovaHTTP": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "com.telerik.afnetworking": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "1664494403800836",
+            "APP_NAME": "NXTNIfty_Android",
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        },
+        "plugin.http.request": {
+            "PACKAGE_NAME": "com.dashok.Nifty"
+        }
+    },
+    "dependent_plugins": {}
+}

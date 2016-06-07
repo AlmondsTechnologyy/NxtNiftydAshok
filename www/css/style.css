@@ -1,0 +1,103 @@
+body {
+font-family:'Myriad Hebrew'
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+}
+
+.sponsor {
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+min-width: 270px;
+}
+
+
+#nxthead {
+border-right: 2px solid #5f5c59;
+}
+
+#sponsor {
+border-right: 2px solid #5f5c59;
+}
+
+.container {
+ background:#FFF;
+}
+
+
+
+/****************************
+ * Desktop and Tablet style *
+ ****************************/
+@media (max-width: 1200px) {
+  }
+ @media (max-width: 850px) {
+   }
+@media (max-width: 992px) {
+ 
+ #sponsor {
+   border-right:hidden;
+ }
+ #nxthead {
+   border-right:hidden;    
+ }
+ .container {
+ background:none;
+}
+.copy {
+   background-color:#000;
+   color:#FFF;
+ } 
+
+   }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 640px) {
+ 
+}
+@media (max-width: 480px) {
+ 
+}
+@media (max-width: 320px) {
+ 
+}
+/*# sourceMappingURL=style.css.map */
+.nx-li {
+  list-style-type: none;
+  padding-left: 10px;
+  border-bottom: 1px solid #000;
+  width: 190px;
+  font-family: 'Myriad Hebrew';
+  margin-left: 7px;
+}
+.nx-li span {
+  margin-left: 92px;
+  font-size:17px;
+  font-family:'Myriad Hebrew';
+}
+.red {
+    color:#F00;
+}
+#date {
+  font-size:14px;
+  color:#5f5c59;
+  line-height: 19px;
+  font-family:'Myriad Hebrew';
+}
+#sponsor {
+  font-size:15px;
+  color:#5f5c59;
+  font-family:'Myriad Hebrew';
+  line-height: 17px;
+}
+.sponsor {
+  border: 2px solid #cecece; margin-top:25px; margin-left:10px; margin-right:10px; margin-bottom:25px;
+}

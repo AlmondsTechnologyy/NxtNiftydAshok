@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nifty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<div id="sliderb_container" class="container">
+
+    <div class="row sponsor">
+
+        <div class="col-md-4" align="center" style="padding-bottom:15px;">
+            <h2 id="sponsor">NXTNIFTY Index beta<br><p id="date">15 - Jan - 2016</p></h2>
+            <div style="min-width: 211px;">
+              <ul>
+                  <li class="nx-li">
+                    Last
+                    <span id="lastValue" class="red">7412</span>
+                  </li>
+                  <li class="nx-li">
+                    <!-- <img src="img/spec-menu-b.png">-->
+                    <img src="img/spec-menu-arrow.png">
+                    <span class="red">-30</span>
+                  </li>
+                  <li class="nx-li">
+                    High
+                    <span>7460</span>
+                  </li>
+                  <li class="nx-li">
+                    Low
+                    <span>7390</span>
+                  </li>
+              </ul>
+
+            </div>
+        </div>
+
+        <div class="col-md-4" align="center">
+            <h2 id="nxthead" style="font-size:20px; color:#5f5c59; line-height: 19px;; ">Market sentiment<br><p style="font-size:14px; color:#5f5c59; line-height: 19px;font-family:'Myriad Hebrew'; ">Posted from 3:15pm daily</p></h2>
+            <div style="display:none;">
+                <input type="text" class="speedometer" value="90"></input>
+                <button class="changeSpeedometer">Submit</button>
+                <br/>
+            </div>
+
+            <div id="showSpeedometer">50</div>
+            <script>
+                </script>
+
+
+        </div>
+
+
+        <div class="col-md-4" align="center">
+            <h2 align="center" style="font-size:20px;  color:#6d6d6d; font-family:'Myriad Hebrew'; ">How The Index Works</h2><img id="smallImage" src="img/logo-b.png">
+            <p style=" color:#6d6d6d;">
+                NXTNIFTY index work by analysing various market live data trades. It indicates the next day probable opening of the market.</p>
+
+            <p id="deviceProperties">Loading device properties...</p>
+
+        </div>
+    </div>
+
+</div>
+<br>
+
+<div id="sliderb_container" class="container copy">
+    <div class="row" id="copy" align="center" style="margin-top:10px; margin-bottom:10px;">
+        &copy 2016 All rights reserved by NXTNIFTY
+    </div>
+</div>
+
+    <script src="js/jquery-1.4.min.js"></script>
+    <script src="js/jquery.speedometer.js"></script>
+    <script src="js/jquery.jqcanvas-modified.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/excanvas-modified.js"></script>
+    <script src="js/homeNotification.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nifty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script src="js/utility.js"></script>
+    <script>
+    function onLoadHome() {
+        var value_login_type = window.localStorage.getItem("login_type");
+        if(value_login_type=="facebook"){
+            var value = window.localStorage.getItem("user_id");
+            document.getElementById("profile_image").src="https://graph.facebook.com/"+value+"/picture?type=small";
+        }else if(value_login_type=="google_plus"){
+            var value = window.localStorage.getItem("user_id");
+            document.getElementById("profile_image").src="https://plus.google.com/s2/photos/profile/"+value+"?sz=100";
+        }
+            
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    </script>
+
+
+
+</head>
+
+<body onload="onLoadHome()">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container"> 
+        <div class="navbar-header pull-left">
+            <p class="navbar-text">
+                &nbsp;&nbsp;<img id="profile_image" src=""></a>    
+
+            </p>  
+        </div>
+        <div class="navbar-header pull-right">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" onclick='logout();'>
+                <span class="glyphicon glyphicon glyphicon-log-out"></span> Logout&nbsp;&nbsp;</a></li>
+            </ul>
+          
+        </div>
+    </div>
+</div>
+
+<div id="sliderb_container" class="container" style="padding-top:20px;padding-bottom:20px;">
+
+    <div class="row" style="background:#FFF;">
+        <div class="col-md-9" align="center" style="padding-top:10px;padding-bottom:10px;">
+            <script type="text/javascript">
+                    google_ad_client = "ca-pub-1491255815252284";
+                    google_ad_slot = "8344511655";
+                    google_ad_width = 728;
+                    google_ad_height = 180;
+                </script>
+
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="sliderb_container" class="container">
+
+    <div class="row sponsor">
+
+        <div class="col-md-4" align="center" style="padding-bottom:15px;">
+            <h2 id="sponsor">NXTNIFTY Index beta<br><p id="date">15 - Jan - 2016</p></h2>
+            <div style="min-width: 211px;">
+
+                           <ul>
+                  <li class="nx-li">
+                    Last
+                    <span id="lastValue" class="red">7412</span>
+                  </li>
+                  <li class="nx-li">
+                    <!-- <img src="img/spec-menu-b.png">-->
+                    <img src="img/spec-menu-arrow.png">
+                    <span class="red">-30</span>
+                  </li>
+                  <li class="nx-li">
+                    High
+                    <span>7460</span>
+                  </li>
+                  <li class="nx-li">
+                    Low
+                    <span>7390</span>
+                  </li>
+              </ul>
+
+            </div>
+        </div>
+
+        <div class="col-md-4" align="center">
+            <h2 id="nxthead" style="font-size:20px; color:#5f5c59; line-height: 19px;; ">Market sentiment<br><p style="font-size:14px; color:#5f5c59; line-height: 19px;font-family:'Myriad Hebrew'; ">Posted from 3:15pm daily</p></h2>
+            <div style="display:none;">
+                <input type="text" class="speedometer" value="90"></input>
+                <button class="changeSpeedometer">Submit</button>
+                <br/>
+            </div>
+
+            <div id="showSpeedometer">50</div>  </div>
+
+
+        <div class="col-md-4" align="center">
+            <h2 align="center" style="font-size:20px;  color:#6d6d6d; font-family:'Myriad Hebrew'; ">How The Index Works</h2><img id="smallImage" src="img/logo-b.png">
+            <p style=" color:#6d6d6d;">
+                NXTNIFTY index work by analysing various market live data trades. It indicates the next day probable opening of the market.</p>
+
+            <p id="deviceProperties">Loading device properties...</p>
+
+        </div>
+    </div>
+
+</div>
+<br>
+
+<div id="sliderb_container" class="container copy">
+
+    <div class="row" id="copy" align="center" style="margin-top:10px; margin-bottom:10px;">
+        &copy 2016 All rights reserved by NXTNIFTY
+    </div>
+</div>
+
+ <script src="js/jquery-1.4.min.js"></script>
+    <script src="js/jquery.speedometer.js"></script>
+    <script src="js/jquery.jqcanvas-modified.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/excanvas-modified.js"></script>
+    <script src="js/homeNotification.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+</body>
+
+</html>
